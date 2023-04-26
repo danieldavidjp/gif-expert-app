@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for GifGridCard component should match the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Harry Potter"
+      src="https://media.giphy.com/media/mz1kJeDVueKC4/giphy.gif"
+    />
+    <p>
+      Harry Potter
+    </p>
+  </div>
+</div>
+`;
