@@ -4,9 +4,8 @@ import { AddCategory, GifGrid } from "./components";
 export const GifExpertApp = () => {
 	const [categories, setCategories] = useState(["Back to The Future"]);
 
-	console.log(categories);
 	const onAddCategory = (newCategory) => {
-		if (categories.includes(newCategory)) return setCategories([newCategory, ...categories.filter((c) => c != newCategory)]);
+		if (categories.includes(newCategory)) return setCategories([newCategory, ...categories.filter((c) => c.toLowerCase() != newCategory)]);
 		setCategories([newCategory, ...categories]);
 	};
 	return (
